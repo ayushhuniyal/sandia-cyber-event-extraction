@@ -1,5 +1,32 @@
 # Results
 
+## File Index
+
+### Direct Approach
+| File | Description |
+|------|-------------|
+| `securebert_chunks.parquet` | SecureBERT chunk-level embeddings (Direct) |
+| `securebert_direct_tuning_results.csv` | HDBSCAN parameter sweep — SecureBERT Direct |
+
+### Hybrid Approach
+| File | Description |
+|------|-------------|
+| `e5_hybrid_embeddings.npy` | E5 article-level embeddings (Hybrid) |
+| `e5_hybrid_embeddings.csv` | E5 embeddings with article metadata |
+| `securebert_hybrid_embeddings.csv` | SecureBERT article-level embeddings (Hybrid) |
+| `securebert_hybrid_tuning_results.csv` | HDBSCAN parameter sweep — SecureBERT Hybrid |
+| `glove_hybrid_tuning_results.csv` | HDBSCAN parameter sweep — GloVe Hybrid |
+
+### Visualizations
+| File | Description |
+|------|-------------|
+| `e5_hybrid_no_noise.png` | Hybrid E5 UMAP — clustered articles only |
+| `e5_hybrid_with_noise.png` | Hybrid E5 UMAP — including noise points |
+| `securebert_hybrid_no_noise.png` | Hybrid SecureBERT UMAP — clustered only |
+| `securebert_hybrid_with_noise.png` | Hybrid SecureBERT UMAP — with noise |
+| `glove_hybrid_no_noise.png` | Hybrid GloVe UMAP — clustered only |
+| `glove_hybrid_with_noise.png` | Hybrid GloVe UMAP — with noise |
+
 ## Clustering Performance Summary
 
 | Model | Clusters | Noise Fraction | Event-Level Coherence |
