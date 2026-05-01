@@ -23,3 +23,28 @@
 - min_cluster_size: 4
 - min_samples: 1  
 - cluster_selection_epsilon: 0.0001
+
+## Notes on Missing Files
+
+The following files were generated on the CU Boulder Alpine HPC 
+cluster or Google Colab during the project and were not retained 
+after the project concluded:
+
+**Direct Approach:**
+`e5_chunks.parquet` — E5 Direct chunk-level embeddings. Clustering 
+results and UMAP visualizations derived from these embeddings are 
+preserved in the notebook outputs.
+
+**Hybrid Approach:**
+`glove_hybrid_embeddings.csv` — GloVe article-level embeddings. 
+Only the clustered output (dependency_glove_with_cluster_id.csv) 
+was retained. The pre-cluster embedding matrix was not saved 
+separately.
+
+`e5_hybrid_tuning_results.csv` — HDBSCAN parameter sweep results 
+for the Hybrid E5 pipeline. Final selected parameters are 
+documented in Key Parameters above.
+
+All other Hybrid Approach files (E5 embeddings .npy/.csv, 
+SecureBERT hybrid embeddings, GloVe and SecureBERT tuning results) 
+are fully preserved and loadable.
