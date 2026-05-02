@@ -67,6 +67,23 @@ Hybrid E5 correctly identified:
 - Scikit-Learn 1.6.1 (HDBSCAN*)
 - UMAP (dimensionality reduction)
 
+## Team & Contributions
+
+This project was completed as a research capstone at the University 
+of Colorado Boulder in partnership with Sandia National Laboratories, 
+in collaboration with three classmates.
+
+**My contributions:**
+- Designed and implemented the full preprocessing and chunking 
+  pipeline — sliding window tokenization, overlap strategy, and 
+  article-level aggregation
+- Built the Direct Approach end to end — E5 and SecureBERT embedding 
+  pipelines, pooling strategies, and batch inference logic
+- Led transformer selection and tradeoff analysis — evaluated E5 vs. 
+  SecureBERT vs. GloVe across pooling strategies (masked mean vs. 
+  4-layer averaged), identifying why domain adaptation alone was 
+  insufficient for event-level separation
+
 ## Key Decisions and Tradeoffs
 
 **1. Dependency parsing over full-text embedding**
